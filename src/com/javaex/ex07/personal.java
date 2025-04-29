@@ -1,38 +1,41 @@
 package com.javaex.ex07;
 
+import java.util.Scanner;
+
 public class personal {
 
 	public static void main(String[] args) {
-		Song list01 = new Song();
-		list01.setTitle("좋은날");
-		list01.setArtist("아이유");
-		list01.setAlbum("Real");
-		list01.setComposer("이민수 작곡");
-		list01.setYear(2010);
-		list01.setTrack(3);
+		Scanner sc = new Scanner(System.in);
+		int num = 0;
+		String[] Song = new String[6];
 		
-		list01.showInfo();
+		for(int i = 0 ; i<Song.length ; i++) {
+			if(i == 0) {
+				System.out.print("title:");
+			}
+			if(i == 1) {
+				System.out.print("artist: ");
+			}
+			if(i == 2) {
+				System.out.print("album: ");
+			}
+			if(i == 3) {
+				System.out.print("composer: ");
+			}
+			if(i == 4) {
+				System.out.print("year: ");
+			}
+			if(i == 5) {
+				System.out.print("track: ");
+			}
+			Song[i] = sc.next();
+			
+		}
 		
-		Song list02 = new Song();
-		list02.setTitle("거짓말");
-		list02.setArtist("BIGBANG");
-		list02.setAlbum("Always");
-		list02.setComposer("G-DRAGON 작곡");
-		list02.setYear(2007);
-		list02.setTrack(2);
-		
-		list02.showInfo();
-		
-		Song list03 = new Song();
-		list03.setTitle("벚꽃엔딩");
-		list03.setArtist("버스커버스커");
-		list03.setAlbum("버스커버스커1집");
-		list03.setComposer("장범준 작곡");
-		list03.setYear(2012);
-		list03.setTrack(4);
-		
-		list03.showInfo();
-
+		for(int i = 0 ; i<Song.length ; i++) {
+			System.out.println(Song[i]);
+		}
+		sc.close();
 	}
 
 }
