@@ -7,6 +7,10 @@ public class Goods {
 	private int price;
 	
 	//생성자
+	public Goods() {
+		//주의: 이 형태는 리턴이 없기 때문에 void나 다른 자료형을 넣어서는 안됨
+		//메모리에 올린다
+	}
 	
 	//메소드
 	//name 등록
