@@ -1,6 +1,6 @@
-package com.javaex.ex22;
+package com.javaex.ex23;
 
-public class Shape {
+public abstract class Shape {
 
 	//field
 	public String fillColor;
@@ -38,10 +38,13 @@ public class Shape {
 		this.lineColor = lineColor;
 	}
 	
+	public abstract void draw();
 	
+	public abstract void area();
 	
 	//method normal
 	
 	
 	
 }
+
