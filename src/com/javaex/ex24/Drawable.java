@@ -6,7 +6,7 @@ public interface Drawable {
 	
 	Drawable[] dArray = new Drawable[4];
 	
-	Drawable dp = new Drawable(5, 100);
+//	Drawable dp = new Drawable(5, 100);
 	
 	
 }
